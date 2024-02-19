@@ -21,4 +21,9 @@ class mensajesController extends Controller
         .view('listadoMensajes')
         .view('templates/footer');
     }
+
+    public function enviarMensaje(){
+        $texto = $_GET['mensajeEnvio'];
+        echo $texto;
+    }
 }

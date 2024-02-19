@@ -2,8 +2,8 @@
   $session = Session();
   $nombre = $session->get('nombre');
 @endphp
-<script src="{{url('js/jquery-3.7.1.min.js')}}"></script>
-<script src="{{url('js/scripts.js')}}"></script>
+<script src="{{asset('js/jquery-3.7.1.min.js')}}"></script>
+<script src="{{asset('js/scripts.js')}}"></script>
 <div>
     <h1>mensajes del chat {{ $nombre }}</h1>
     <div id="contenedor">

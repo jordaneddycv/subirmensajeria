@@ -22,3 +22,4 @@ Route::get('/login', [UsuariosController::class, 'registrarSesion']);
 //     return view('welcome');
 // });
 Route::get('/listado', [mensajesController::class, 'mostrarMensajes']);
+Route::get('/enviarMensaje', [mensajesController::class, 'enviarMensaje']);
