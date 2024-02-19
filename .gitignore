@@ -2,12 +2,13 @@
 /node_modules
 /public/build
 /public/hot
-/public/storage
-/storage/*.key
+# /public/storage
+# /storage/*.key
 /vendor
-.env
-.env.backup
-.env.production
+# .env
+# .env.backup
+# .env.production
+# es mejor no comentar eso porque sino si lo subo cualquiera puede tener nuestros datos en linea, es mejor dejarlo comentado
 .phpunit.result.cache
 Homestead.json
 Homestead.yaml

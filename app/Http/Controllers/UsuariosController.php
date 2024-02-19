@@ -11,12 +11,23 @@ class UsuariosController extends Controller
         return view('templates/header').view('bienvenida').view('templates/footer');
     }
 
+    public function inicio(){
+
+        return view('templates/header')
+        .view('listadoMensajes')
+        .view('templates/footer');
+
+    }
+
     public function registrarSesion(Request $request){
 
-        $nombre = $request->post('nombre');
+         $nombre = $request->post('nombre');
 
-        $session = Session();
-        $session->put('nombre', $nombre);
+         $session = Session();
+         $session->put('nombre', $nombre);
+        return view('templates/header')
+        .view('listadoMensajes')
+        .view('templates/footer');
 
     }
 

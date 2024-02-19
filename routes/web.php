@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\mensajesController;
+use App\Http\Controllers\UsuariosController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,8 +14,11 @@ use App\Http\Controllers\mensajesController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/', [Msg::class, 'inicio']);
-Route::post('/acceder', [Msg::class, 'acceder']);
+// Route::get('/', [Msg::class, 'inicio']);
+// Route::post('/acceder', [Msg::class, 'acceder']);
+Route::get('/acceso', [UsuariosController::class, 'acceso']);
+Route::get('/login', [UsuariosController::class, 'registrarSesion']);
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+Route::get('/listado', [mensajesController::class, 'mostrarMensajes']);
